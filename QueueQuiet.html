@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QueueQuiet</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+      crossorigin="anonymous" />
+
+    <style>
+      body {
+        background-color: #fbf8f0;
+        color: #202747;
+      }
+
+      .queue-card {
+        border: 0;
+        border-radius: 18px;
+      }
+
+      summary {
+        cursor: pointer;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">QueueQuiet</a>
+        <div>
+          <a class="nav-link d-inline-block" href="#services">Services</a>
+          <a class="nav-link d-inline-block" href="#how">How it works</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container py-5">
+      <div class="p-4 p-md-5 rounded-4" style="background-color: #e9e4fa">
+        <p class="text-uppercase fw-bold mb-2">Campus queue guide</p>
+        <h1 class="display-5 fw-bold">Know the wait.<br />Plan your break.</h1>
+        <p class="lead">Check estimated waiting times for campus services.</p>
+        <a class="btn btn-dark" href="#services">Check queues</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="container pb-5" id="services">
+        <h2 class="fw-bold mb-1">Choose a service</h2>
+        <p class="text-secondary mb-4">
+          Sample estimates for this project demo.
+        </p>
+
+        <div class="row g-4">
+          <!-- Canteen card -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card queue-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="fs-2" aria-hidden="true">🥪</div>
+                <h3 class="h4 fw-bold mt-2">Canteen</h3>
+                <p class="text-secondary mb-1">Estimated wait</p>
+                <p class="display-6 fw-bold">~12 min</p>
+                <span class="badge rounded-pill text-bg-warning">Moderate</span>
+
+                <details>
+                  <summary class="btn btn-dark w-100 mt-4">
+                    View queue details
+                  </summary>
+                  <div class="bg-light rounded-3 p-3 mt-3">
+                    <p class="mb-1"><strong>About 8 people ahead</strong></p>
+                    <p class="mb-0 text-secondary">
+                      Sample information for the demo.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+
+          <!-- Library card -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card queue-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="fs-2" aria-hidden="true">📚</div>
+                <h3 class="h4 fw-bold mt-2">Library Desk</h3>
+                <p class="text-secondary mb-1">Estimated wait</p>
+                <p class="display-6 fw-bold">~5 min</p>
+                <span class="badge rounded-pill text-bg-info">Short wait</span>
+
+                <details>
+                  <summary class="btn btn-dark w-100 mt-4">
+                    View queue details
+                  </summary>
+                  <div class="bg-light rounded-3 p-3 mt-3">
+                    <p class="mb-1"><strong>About 2 people ahead</strong></p>
+                    <p class="mb-0 text-secondary">
+                      Sample information for the demo.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+
+          <!-- College Office card -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card queue-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="fs-2" aria-hidden="true">🏢</div>
+                <h3 class="h4 fw-bold mt-2">College Office</h3>
+                <p class="text-secondary mb-1">Estimated wait</p>
+                <p class="display-6 fw-bold">~25 min</p>
+                <span class="badge rounded-pill text-bg-danger"
+                  >Busy right now</span
+                >
+
+                <details>
+                  <summary class="btn btn-dark w-100 mt-4">
+                    View queue details
+                  </summary>
+                  <div class="bg-light rounded-3 p-3 mt-3">
+                    <p class="mb-1"><strong>About 14 people ahead</strong></p>
+                    <p class="mb-0 text-secondary">
+                      Sample information for the demo.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5" id="how">
+        <h2 class="fw-bold mb-4">How it works</h2>
+        <div class="row g-3">
+          <div class="col-12 col-md-4">
+            <div class="bg-white rounded-3 p-3 h-100">
+              <strong>1. Choose</strong>
+              <p class="mb-0">Select a campus service.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="bg-white rounded-3 p-3 h-100">
+              <strong>2. Check</strong>
+              <p class="mb-0">View its sample wait estimate.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="bg-white rounded-3 p-3 h-100">
+              <strong>3. Plan</strong>
+              <p class="mb-0">Decide when to visit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container py-4 border-top text-secondary">
+      QueueQuiet · LA-II Mini Project · Sample estimates only
+    </footer>
+  </body>
+</html>
